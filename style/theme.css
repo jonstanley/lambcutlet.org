@@ -1,0 +1,13 @@
+
+html, body {
+margin: 0;
+padding: 0;
+}
+
+body {
+padding: 0 10%;
+}
+
+header, h1, p {
+text-align: center;
+}
