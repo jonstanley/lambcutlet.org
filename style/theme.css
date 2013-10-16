@@ -25,3 +25,7 @@ body {
 header, h1, p {
 	text-align: center;
 }
+
+h1 a {
+	text-decoration: none;
+}
