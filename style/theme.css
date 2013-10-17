@@ -37,7 +37,7 @@ footer p {
 
 /* First go at creating a CSS3/HTML5 no javascript gallery-cum-lightbox... */
 body.gallery {
-	padding: 0 5em;
+	padding: 15px;
 }
 
 body.gallery a img {
@@ -59,33 +59,104 @@ body.gallery dl::after {
 
 body.gallery dl dt {
 	float: left;
+	width: 280px;
+	height: 280px;
+}
+
+body.gallery dl dt a {
+	display: block;
+	margin: 10px;
+	padding: 0;
+	border: 5px solid #666;
 	width: 250px;
 	height: 250px;
+	transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
 }
 
-body.gallery dl dd {
-	display: none;
-}
-
-body.gallery dl dt + dd:target {
+body.gallery dl dt a:hover {
 	display: block;
 	margin: 0;
 	padding: 0;
+	width: 270px;
+	height: 270px;
+}
+
+body.gallery dl dt a  > img{
+	height: 250px;
+	width: 250px;
+	transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+
+body.gallery dl dt a:hover  > img{
+	height: 270px;
+	width: 270px;
+}
+
+body.gallery dl dd {
+	width: 0;
+	height: 0;
+}
+
+body.gallery dl dd * {
+	display: none;
+}
+
+body.gallery dl img {
+	display: block;
+}
+
+body.gallery dl dt img {
+}
+
+body.gallery dl dt + dd {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+}
+
+body.gallery dl dt + dd:target {
+	margin: 0;
+	padding: 0;
 	position: absolute;
-	top: 25%;
+	top: 0%;
 	left: 50%;
+	opacity: 1;
+	background-color: white;
+	height: auto;
+}
+
+body.gallery dl dt + dd:target * {
+	display: block;
 }
 
 body.gallery dl dt + dd[data-orientation=landscape]:target {
-	width: 900px;
-	margin-top: -150px;
+	width: 910px;
+	margin-top: 60px;
 	margin-left: -450px;
 }
 
 body.gallery dl dt + dd[data-orientation=portrait]:target {
-	width: 600px;
-	margin-top: -225px;
+	width: 610px;
+	margin-top: 15px;
 	margin-left: -300px;
+}
+
+body.gallery dl dt + dd[data-orientation=landscape]:target > ul > li > img {
+	width: 900px;
+	padding: 5px 5px 0px;
+}
+
+body.gallery dl dt + dd[data-orientation=portrait]:target > ul > li > img {
+	width: 600px;
+	padding: 5px 5px 0px;
 }
 
 body.gallery dl dt + dd:target ul {
@@ -129,9 +200,11 @@ body.gallery dl dt + dd[data-orientation=portrait]:target > ul > li > a[data-emp
 }
 
 body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=prev] {
-	left: 0;
+	left: 5px;
+	top: 5px;
 }
 
 body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=next] {
-	right: 0;
+	right: 5px;
+	top: 5px;
 }
