@@ -199,6 +199,10 @@ body.gallery dl dt + dd[data-orientation=portrait]:target > ul > li > a[data-emp
 	height: 900px;
 }
 
+body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel] {
+	text-decoration: none;
+}
+
 body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=prev] {
 	left: 5px;
 	top: 5px;
@@ -207,4 +211,31 @@ body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=p
 body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=next] {
 	right: 5px;
 	top: 5px;
+}
+
+body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel]::after {
+	display: block;
+	content: "";
+	font-size: 25rem;
+	text-shadow: 0 0 3rem #000;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	color: white;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+}
+
+body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel]:hover::after {
+	opacity: 0.75;
+}
+
+body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=prev]:hover::after {
+	content: "\00AB";
+}
+
+body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=next]:hover::after {
+	content: "\00BB";
 }
