@@ -38,7 +38,11 @@ footer p {
 
 /* First go at creating a CSS3/HTML5 no javascript gallery-cum-lightbox... */
 body.gallery {
-	padding: 15px;
+	padding: 0 15px 15px;
+}
+
+body.gallery {
+	margin-left: 15px;
 }
 
 body.gallery a img {
