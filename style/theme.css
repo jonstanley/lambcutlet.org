@@ -22,7 +22,7 @@ body {
 	padding: 0 10%;
 }
 
-body.home > header {
+body.home > header, body.errordocs > header {
 	text-align: center;
 }
 
