@@ -244,3 +244,31 @@ body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=p
 body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=next]:hover::after {
 	content: "\00BB";
 }
+
+@media only screen and (min-width: 310px) {
+	body.gallery dl {
+		width: 280px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 590px) {
+	body.gallery dl {
+		width: 560px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 870px) {
+	body.gallery dl {
+		width: 840px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 1150px) {
+	body.gallery dl {
+		width: 1120px;
+		margin: 0 auto;
+	}
+}
