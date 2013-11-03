@@ -28,8 +28,31 @@ body > header {
 	height: 4em;
 	top: 0;
 	left: 0;
-	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
+	background: -moz-linear-gradient(to bottom,
+								rgba(255, 255, 255, 1) 0%,
+								rgba(255, 255, 255, 0.75) 50%,
+								rgba(255, 255, 255, 0.6) 75%,
+								rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(to bottom,
+								rgba(255, 255, 255, 1) 0%,
+								rgba(255, 255, 255, 0.75) 50%,
+								rgba(255, 255, 255, 0.6) 75%,
+								rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(to bottom,
+								rgba(255, 255, 255, 1) 0%,
+								rgba(255, 255, 255, 0.75) 50%,
+								rgba(255, 255, 255, 0.6) 75%,
+								rgba(255, 255, 255, 0) 100%);
+	background: -ms-linear-gradient(to bottom,
+								rgba(255, 255, 255, 1) 0%,
+								rgba(255, 255, 255, 0.75) 50%,
+								rgba(255, 255, 255, 0.6) 75%,
+								rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to bottom,
+								rgba(255, 255, 255, 1) 0%,
+								rgba(255, 255, 255, 0.75) 50%,
+								rgba(255, 255, 255, 0.6) 75%,
+								rgba(255, 255, 255, 0) 100%);
 }
 
 body > header > h1 {
@@ -47,7 +70,7 @@ body > header > h1 > a {
 	line-height: 4rem;
 	font-weight: lighter;
 	font-size: 2.5rem;
-	text-indent: 0.5rem;
+	text-indent: 1rem;
 	text-shadow: 0 0 0.2rem #000;
 }
 
@@ -65,30 +88,51 @@ body > header > nav > ul > li {
 body > header > nav > ul > li  > a {
 	display: block;
 	width: 100%;
-	background-color: rgba(40, 40, 40, 1);
+	background-color: rgba(30, 30, 30, 0.4);
 	color: #FFF;
-	width: 9rem;
-	height: 2rem;
+	width: 9.6rem;
+	height: 1.8rem;
 	margin: 0 0.5rem 0 0;
-	padding: 3rem 0 0;
-	border-radius: 0 0 1.5rem 1.5rem;
+	padding: 2.2rem 0 0;
+	position: relative;
+	left: 0;
+	border-radius: 0 0 0.2rem 0.2rem;
 	text-decoration: none;
 	text-align: center;
-	transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3 ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+	text-shadow: 0 0 0.2rem rgba(0, 0, 0, 1);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
 }
 
 body > header > nav > ul > li  > a:hover {
-	background-color: rgba(255, 0, 0, 1);
-	height: 2rem;
-	margin: 0 0.5rem 0 0;
-	padding: 5rem 0 0;
-	transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
+	width: 12.6rem;
+	height: 1.8rem;
+	margin: 0 -2.5rem 0 0;
+	position: relative;
+	left: -3rem;
+	padding: 6.2rem 0 0;
+	border-radius: 0 0 0.5rem 0.5rem;
+	text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 0.2em 0.2em rgba(0, 0, 0, 0.2);
+	transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+}
+
+body > header > nav > ul > li  > a.nav-elsewhere:hover {
+	background-color: rgba(224, 0, 0, 0.9);
+}
+
+body > header > nav > ul > li  > a.nav-cv:hover {
+	background-color: rgba(0, 128, 0, 0.9);
+}
+
+body > header > nav > ul > li  > a.nav-gallery:hover {
+	background-color: rgba(0, 0, 192, 0.9);
 }
 
 body > header::after {
@@ -110,7 +154,7 @@ body > footer {
 	width: 100%;
 	height: 20rem;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(40, 40, 40, 1);
+	background-color: rgba(60, 60, 60, 1);
 	box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.5);
 }
 
@@ -163,10 +207,10 @@ body.gallery dl dt a {
 	border: 5px solid rgba(0, 0, 0, 0.6);
 	width: 250px;
 	height: 250px;
-	transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
 }
 
 body.gallery dl dt a:hover {
@@ -175,28 +219,28 @@ body.gallery dl dt a:hover {
 	padding: 0;
 	width: 270px;
 	height: 270px;
-	transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
 }
 
 body.gallery dl dt a  > img{
 	height: 250px;
 	width: 250px;
-	transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
 }
 
 body.gallery dl dt a:hover  > img{
 	height: 270px;
 	width: 270px;
-	transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-webkit-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
 }
 
 body.gallery dl dd {
