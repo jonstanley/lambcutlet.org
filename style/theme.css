@@ -124,15 +124,15 @@ body > header > nav > ul > li  > a:hover {
 }
 
 body > header > nav > ul > li  > a.nav-elsewhere:hover {
-	background-color: rgba(224, 0, 0, 0.9);
+	background-color: rgba(224, 32, 32, 0.9);
 }
 
 body > header > nav > ul > li  > a.nav-cv:hover {
-	background-color: rgba(0, 128, 0, 0.9);
+	background-color: rgba(32, 160, 32, 0.9);
 }
 
 body > header > nav > ul > li  > a.nav-gallery:hover {
-	background-color: rgba(0, 0, 192, 0.9);
+	background-color: rgba(64, 64, 192, 0.9);
 }
 
 body > header::after {
