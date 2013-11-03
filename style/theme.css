@@ -19,30 +19,118 @@ html, body {
 
 body {
 	font-family: "Open Sans", sans-serif;
-	padding: 0 10%;
+	padding: 0;
 }
 
-body.home > header, body.errordocs > header {
+body > header {
+	position: fixed;
+	width: 100%;
+	height: 4em;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
+}
+
+body > header > h1 {
+	height: 4rem;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+body > header > h1 > a {
+	display: block;
+	height: 4rem;
+	width: 20rem;
+	text-align: left;
+	line-height: 4rem;
+	font-weight: lighter;
+	font-size: 2.5rem;
+	text-indent: 0.5rem;
+	text-shadow: 0 0 0.2rem #000;
+}
+
+body > header > nav > ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+body > header > nav > ul > li {
+	display: block;
+	float: left;
+}
+
+body > header > nav > ul > li  > a {
+	display: block;
+	width: 100%;
+	background-color: rgba(40, 40, 40, 1);
+	color: #FFF;
+	width: 9rem;
+	height: 2rem;
+	margin: 0 0.5rem 0 0;
+	padding: 3rem 0 0;
+	border-radius: 0 0 1.5rem 1.5rem;
+	text-decoration: none;
 	text-align: center;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3 ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+body > header > nav > ul > li  > a:hover {
+	background-color: rgba(255, 0, 0, 1);
+	height: 2rem;
+	margin: 0 0.5rem 0 0;
+	padding: 5rem 0 0;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+body > header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body > article {
+	margin-top: 6em;
+	padding: 0 1rem;
+}
+
+body.home > article > section#intro {
+	text-align: center;
+}
+
+body > footer {
+	width: 100%;
+	height: 20rem;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(40, 40, 40, 1);
+	box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.5);
 }
 
 h1 a {
 	text-decoration: none;
-	color: black;
+	color: #000;
 }
 
-footer p {
-	font-size: 0.8em;
+footer p, footer p a {
+	font-size: 0.875rem;
 	text-align: center;
+	line-height: 8rem;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
 }
 
 /* First go at creating a CSS3/HTML5 no javascript gallery-cum-lightbox... */
-body.gallery {
-	padding: 0 15px 15px;
-}
 
-body.gallery header {
-	margin-left: 10px;
+body.gallery > article {
+	padding: 0;
 }
 
 body.gallery a img {
@@ -72,7 +160,7 @@ body.gallery dl dt a {
 	display: block;
 	margin: 10px;
 	padding: 0;
-	border: 5px solid #666;
+	border: 5px solid rgba(0, 0, 0, 0.6);
 	width: 250px;
 	height: 250px;
 	transition: all 0.25s ease-in-out;
@@ -87,6 +175,10 @@ body.gallery dl dt a:hover {
 	padding: 0;
 	width: 270px;
 	height: 270px;
+	transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
 }
 
 body.gallery dl dt a  > img{
@@ -101,6 +193,10 @@ body.gallery dl dt a  > img{
 body.gallery dl dt a:hover  > img{
 	height: 270px;
 	width: 270px;
+	transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
 }
 
 body.gallery dl dd {
@@ -134,7 +230,7 @@ body.gallery dl dt + dd:target {
 	top: 0%;
 	left: 50%;
 	opacity: 1;
-	background-color: white;
+	background-color: #FFF;
 	height: auto;
 }
 
@@ -191,7 +287,7 @@ body.gallery dl dt + dd:target ul, body.gallery dl dt + dd:target ul  li{
 	padding: 0;
 	z-index: 1000;
 	position: relative;
-	background-color: white;
+	background-color: #FFF;
 }
 
 body.gallery dl dt + dd[data-orientation=landscape]:target > ul > li > a[data-empty][rel] {
@@ -226,7 +322,7 @@ body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel]:
 	margin: 0;
 	padding: 0;
 	opacity: 0;
-	color: white;
+	color: #FFF;
 	transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-webkit-transition: opacity 0.5s ease-in-out;
