@@ -272,6 +272,7 @@ body.gallery dl dt a {
 	margin: 10px;
 	padding: 0;
 	border: 5px solid #FFF;
+	background-color: #FFF;
 	width: 250px;
 	height: 250px;
 	box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
