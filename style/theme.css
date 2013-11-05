@@ -86,10 +86,6 @@ body > header > h1 > a {
 	text-shadow: 0 0 0.2rem #FFF;
 }
 
-body.home > article img {
-	border: 5px solid #FFF;
-}
-
 body > header > h1 > a:hover, body > header > h1 > a:hover::after, body > header > h1 > a:focus, body > header > h1 > a:focus::after {
 	-webkit-animation-name: flibble;
 	-webkit-animation-duration: 0.25s;
@@ -218,9 +214,15 @@ body.home > article > section {
 	text-align: center;
 }
 
-body.home > article > section > dl * {
+body.home > article > section > dl > dt {
 	margin: 0;
 	padding: 0;
+	font-weight: bold;
+}
+
+body.home > article > section > dl dd {
+	margin: 0;
+	padding: 0 0 2rem;
 }
 
 body > footer {
