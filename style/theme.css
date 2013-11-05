@@ -14,16 +14,16 @@
 
 @keyframes flibble {
 	0% {
-		text-shadow: 0 0.1rem 0.2rem #FFF;
+		text-shadow: 0.025rem 0.175rem 0.2rem #FFF;
 	}
 	33% {
-		text-shadow: -0.125rem -0.75rem 0.2rem #FFF;
+		text-shadow: -0.125rem -0.075rem 0.25rem #FFF;
 	}
 	67% {
-		text-shadow: 0.075rem -0.1rem 0.2rem #FFF;
+		text-shadow: 0.075rem -0.125rem 0.2rem #FFF;
 	}
 	100% {
-		text-shadow: -0.075rem 0 0.2rem #FFF;
+		text-shadow: -0.175rem 0.025rem 0.25rem #FFF;
 	}
 }
 
