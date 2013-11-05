@@ -210,6 +210,10 @@ body > article h1 {
 	font-size: 2.2rem;
 }
 
+body > article h2 {
+	font-size: 1.5rem;
+}
+
 body.home > article > section {
 	text-align: center;
 }
@@ -223,6 +227,56 @@ body.home > article > section > dl > dt {
 body.home > article > section > dl dd {
 	margin: 0;
 	padding: 0 0 2rem;
+}
+
+body.cv > article > header > dl > dt {
+	float: left;
+	font-weight: bold;
+	margin: 0.25rem 2rem 0.25rem 0;
+	width: 10rem;
+}
+
+body.cv > article > section[id] > section > dl > dt {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+body.cv > article > section[id] > section dl > dt::after, body.cv > article > header > dl > dt::after {
+	content: "\003A";
+}
+
+body.cv > article > section[id] > section > header > dl > dt {
+	float: left;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0.25rem 2rem 0.25rem 0;
+	width: 10rem;
+}
+
+body.cv > article > section[id] > section > header > dl > dt:first-of-type {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin: 0 2rem 0 0;
+}
+
+body.cv > article > section[id] > section > header > dl > dd:first-of-type > h1 {
+	margin: 0;
+}
+
+body.cv > article > section[id] > section > header > dl > dd:first-of-type > p {
+	margin: 0.5rem 0;
+}
+
+body.cv > article > section[id] > section > header > dl > dd:not(:first-of-type) {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0.25rem 0;
+}
+
+body.cv > article > section[id] > section > header > dl > dd::after, body.cv > article > header > dl > dd::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 body > footer {
