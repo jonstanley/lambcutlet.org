@@ -183,7 +183,7 @@ body > header > nav > ul > li  > a:hover, body > header > nav > ul > li  > a:foc
 }
 
 body > header > nav > ul > li  > a.nav-elsewhere:hover, body > header > nav > ul > li  > a.nav-elsewhere:focus {
-	background-color: rgba(192, 16, 0, 0.9);
+	background-color: rgba(224, 128, 16, 0.9);
 }
 
 body > header > nav > ul > li  > a.nav-cv:hover, body > header > nav > ul > li  > a.nav-cv:focus {
@@ -191,7 +191,7 @@ body > header > nav > ul > li  > a.nav-cv:hover, body > header > nav > ul > li  
 }
 
 body > header > nav > ul > li  > a.nav-gallery:hover, body > header > nav > ul > li  > a.nav-gallery:focus {
-	background-color: rgba(64, 16, 128, 0.9);
+	background-color: rgba(192, 16, 0, 0.9);
 }
 
 body > header::after {
