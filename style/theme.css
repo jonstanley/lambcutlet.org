@@ -146,7 +146,7 @@ body > header > nav > ul > li {
 	float: left;
 }
 
-body > header > nav > ul > li  > a {
+body > header > nav > ul > li > a {
 	display: block;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.1);
@@ -171,7 +171,7 @@ body > header > nav > ul > li  > a {
 	-o-transition: all 0.15s ease-in-out;
 }
 
-body > header > nav > ul > li  > a:hover, body > header > nav > ul > li  > a:focus {
+body > header > nav > ul > li > a:hover, body > header > nav > ul > li > a:focus {
 	color: #FFF;
 	width: 11rem;
 	height: 2.6rem;
@@ -188,15 +188,15 @@ body > header > nav > ul > li  > a:hover, body > header > nav > ul > li  > a:foc
 	-o-transition: all 0.15s ease-in-out;
 }
 
-body > header > nav > ul > li  > a.nav-elsewhere:hover, body > header > nav > ul > li  > a.nav-elsewhere:focus {
+body > header > nav > ul > li:nth-of-type(1) > a:hover, body > header > nav > ul > li:nth-of-type(1) > a:focus {
 	background-color: rgba(224, 128, 16, 0.9);
 }
 
-body > header > nav > ul > li  > a.nav-cv:hover, body > header > nav > ul > li  > a.nav-cv:focus {
+body > header > nav > ul > li:nth-of-type(2) > a:hover, body > header > nav > ul > li:nth-of-type(2) > a:focus {
 	background-color: rgba(64, 96, 32, 0.9);
 }
 
-body > header > nav > ul > li  > a.nav-gallery:hover, body > header > nav > ul > li  > a.nav-gallery:focus {
+body > header > nav > ul > li:nth-of-type(3) > a:hover, body > header > nav > ul > li:nth-of-type(3) > a:focus {
 	background-color: rgba(192, 16, 0, 0.9);
 }
 
@@ -359,7 +359,7 @@ body.gallery dl dt a:hover, body.gallery dl dt a:focus {
 	-o-transition: all 0.2s ease-in-out;
 }
 
-body.gallery dl dt a  > img{
+body.gallery dl dt a > img{
 	height: 250px;
 	width: 250px;
 	transition: all 0.2s ease-in-out;
@@ -368,7 +368,7 @@ body.gallery dl dt a  > img{
 	-o-transition: all 0.2s ease-in-out;
 }
 
-body.gallery dl dt a:hover  > img, body.gallery dl dt a:focus  > img{
+body.gallery dl dt a:hover > img, body.gallery dl dt a:focus > img{
 	height: 270px;
 	width: 270px;
 	transition: all 0.2s ease-in-out;
@@ -461,7 +461,7 @@ body.gallery dl dt + dd:target > ul > li > a[data-empty] {
 	z-index: 100;
 }
 
-body.gallery dl dt + dd:target ul, body.gallery dl dt + dd:target ul  li{
+body.gallery dl dt + dd:target ul, body.gallery dl dt + dd:target ul li{
 	margin: 0;
 	padding: 0;
 	z-index: 1000;
