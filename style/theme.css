@@ -16,7 +16,10 @@
 	0% {
 		text-shadow: 0 0.1rem 0.2rem #FFF;
 	}
-	50% {
+	33% {
+		text-shadow: -0.125rem -0.75rem 0.2rem #FFF;
+	}
+	67% {
 		text-shadow: 0.075rem -0.1rem 0.2rem #FFF;
 	}
 	100% {
@@ -26,13 +29,16 @@
 
 @-webkit-keyframes flibble {
 	0% {
-		text-shadow: 0 0.1rem 0.2rem #FFF;
+		text-shadow: 0.025rem 0.175rem 0.2rem #FFF;
 	}
-	50% {
-		text-shadow: 0.075rem -0.1rem 0.2rem #FFF;
+	33% {
+		text-shadow: -0.125rem -0.075rem 0.25rem #FFF;
+	}
+	67% {
+		text-shadow: 0.075rem -0.125rem 0.2rem #FFF;
 	}
 	100% {
-		text-shadow: -0.075rem 0 0.2rem #FFF;
+		text-shadow: -0.175rem 0.025rem 0.25rem #FFF;
 	}
 }
 
@@ -88,24 +94,24 @@ body > header > h1 > a {
 
 body > header > h1 > a:hover, body > header > h1 > a:hover::after, body > header > h1 > a:focus, body > header > h1 > a:focus::after {
 	-webkit-animation-name: flibble;
-	-webkit-animation-duration: 0.25s;
+	-webkit-animation-duration: 0.5s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate-reverse;
+	-webkit-animation-direction: alternate;
 	-webkit-animation-timing-function: ease-in-out;
 	-moz-animation-name: flibble;
-	-moz-animation-duration: 0.25s;
+	-moz-animation-duration: 0.5s;
 	-moz-animation-iteration-count: infinite;
-	-moz-animation-direction: alternate-reverse;
+	-moz-animation-direction: alternate;
 	-moz-animation-timing-function: ease-in-out;
 	-o-animation-name: flibble;
-	-o-animation-duration: 0.25s;
+	-o-animation-duration: 0.5s;
 	-o-animation-iteration-count: infinite;
-	-o-animation-direction: alternate-reverse;
+	-o-animation-direction: alternate;
 	-o-animation-timing-function: ease-in-out;
 	animation-name: flibble;
-	animation-duration: 0.25s;
+	animation-duration: 0.5s;
 	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-timing-function: ease-in-out;
 }
 
