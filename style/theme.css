@@ -525,6 +525,20 @@ body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=n
 	content: "\00BB";
 }
 
+html#cv:target {
+	background: none;
+	color: black;
+}
+
+html#cv:target body.cv > header, html#cv:target body.cv > footer {
+	display: none;
+}
+
+html#cv:target body.cv > article {
+	text-shadow: none;
+	margin: 2em 0;
+}
+
 @media only screen and (min-width: 310px) {
 	body.gallery dl {
 		width: 280px;
