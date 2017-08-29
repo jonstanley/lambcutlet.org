@@ -525,6 +525,8 @@ body.gallery dl dt + dd[data-orientation]:target > ul > li > a[data-empty][rel=n
 	content: "\00BB";
 }
 
+/* CSS target for CV styling */
+
 html#cv:target {
 	background: none;
 	color: black;
