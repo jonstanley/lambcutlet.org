@@ -237,6 +237,11 @@ body.home > article > section > dl dd {
 	padding: 0;
 }
 
+body.home > article > section > dl dd + dt {
+	margin: 0;
+	padding: 2rem 0 0;
+}
+
 body.home > article > section > dl dd:last-child {
 	margin: 0;
 	padding: 0 0 2rem;
